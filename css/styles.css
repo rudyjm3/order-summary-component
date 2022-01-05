@@ -1,0 +1,23 @@
+/* == COLORS == */
+:root {
+   --pale-blue: hsl(225, 100%, 98%);
+   --desaturated-blue: hsl(224, 23%, 55%);
+   --dark-blue: hsl(223, 47%, 23%);
+ }
+/* == FONTS == 
+   font-family: 'Open Sans', sans-serif;
+   font-family: 'Red Hat Display', sans-serif;
+*/
+p{
+   font-size: 16px;
+}
+
+body{
+   font-family: 'Open Sans', sans-serif;
+   font-size: 18px;
+   background-color: grey;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
