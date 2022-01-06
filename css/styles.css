@@ -13,11 +13,129 @@ p{
 }
 
 body{
-   font-family: 'Open Sans', sans-serif;
+   font-family: 'Red Hat Display', sans-serif;
    font-size: 18px;
-   background-color: grey;
+   background-image: url("/images/pattern-background-desktop.svg");
+   background-position: top;
+   background-repeat: no-repeat;
+   background-color: #e0e8ff;
    min-height: 100vh;
    display: flex;
    justify-content: center;
    align-items: center;
+   padding: 20px;
+}
+.card-container{
+   max-width: 450px;
+   min-width: 400px;
+   -webkit-filter: drop-shadow(0px 20px 8px rgba(165, 165, 165, 0.3));
+   filter: drop-shadow(0px 20px 8px rgba(165, 165, 165, 0.3));
+}
+.card-wrapper{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   border-radius: 10px;
+}
+.hero{
+   border-radius: 10px 10px 0 0;
+   overflow: hidden;
+   height: 220px;
+}
+.hero-image{
+   height: auto;
+}
+.order-content-wrapper{
+   position: relative;
+   text-align: center;
+   padding: 50px;
+   background-color: white;
+   border-radius: 0 0 10px 10px;
+}
+.card-title{
+   font-size: 30px;
+   font-weight: 800;
+   margin-bottom: 30px;
+} 
+.card-content{
+   color: #808297;
+   line-height: 1.4;
+   margin-bottom: 20px;
+}
+.product-box{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-radius: 8px;
+   background-color:hsl(225, 100%, 98%);
+   padding: 30px 20px;
+   margin-bottom: 25px; 
+}
+.product-icon{
+   position: relative;
+   border-radius: 50%;
+   padding: 10px 12px 10px 10px;
+   background-color:#dee6f9;
+} 
+.product-icon > i{
+   flex-grow: 1;
+   color: var(--desaturated-blue);
+   text-align: center;
+   margin: auto;
+}
+.plan-info{
+   flex-grow: 2;
+   font-size: 15px;
+   line-height: 1.3;
+   color: #808297;
+}
+.plan-info > span{
+   color: #333;
+   font-weight: bold;
+}
+.change-link{
+   flex-grow: 4;
+   text-align: right;
+   font-size: 15px;
+   font-weight: 600;
+   transition: all 0.2s ease-in-out;
+}
+.change-link:hover{
+   text-decoration: none;
+   color: #766cf1;
+}
+.process-order-box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.payment-btn{
+   border: none;
+   background-color: #382ae1;
+   padding: 15px 25px;
+   color: white;
+   font-weight: bold;
+   border-radius: 8px;
+   width: 100%;
+   margin-bottom: 35px;  
+   cursor: pointer;
+   -webkit-box-shadow: 1px 17px 15px 6px rgba(0,0,0,0.15); 
+   box-shadow: 1px 17px 15px 6px rgba(0,0,0,0.15);
+   transition: background-color 0.2s ease-in-out;
+}
+.payment-btn:hover{
+   background-color: #766cf1;
+}
+.process-order-box > a{
+   font-size: 14px;
+   font-weight: 800;
+   text-decoration: none;
+   color: #777886;
+   transition: color 0.2s ease-in-out;
+}
+.process-order-box > a:hover{
+   color: #333;
 }
