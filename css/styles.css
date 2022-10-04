@@ -1,3 +1,9 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
 /* == COLORS == */
 :root {
    --pale-blue: hsl(225, 100%, 98%);
@@ -24,11 +30,10 @@ body{
    display: flex;
    justify-content: center;
    align-items: center;
-   padding: 20px;
+   /* padding: 20px; */
 }
 .card-container{
-   max-width: 450px;
-   min-width: 400px;
+   width: 450px;
    -webkit-filter: drop-shadow(0px 20px 8px rgba(165, 165, 165, 0.3));
    filter: drop-shadow(0px 20px 8px rgba(165, 165, 165, 0.3));
 }
@@ -38,11 +43,13 @@ body{
    justify-content: center;
    align-items: center;
    flex-direction: column;
+   width: 100%;
    border-radius: 10px;
 }
 .hero{
    border-radius: 10px 10px 0 0;
    overflow: hidden;
+   width: 100%;
    height: 220px;
 }
 .hero-image{
@@ -51,6 +58,7 @@ body{
 .order-content-wrapper{
    position: relative;
    text-align: center;
+   width: 100%;
    padding: 50px;
    background-color: white;
    border-radius: 0 0 10px 10px;
@@ -139,4 +147,26 @@ body{
 }
 .process-order-box > a:hover{
    color: #333;
+}
+
+/* Mobile Styling */
+@media only screen and (max-width: 600px){
+	/*Big smartphones [376px -> 600px]*/
+   .card-container {
+      padding: 0 10px;
+   }
+}
+
+@media only screen and (max-width: 375px){
+	/*Small smartphones [375px and below]*/
+   .card-container {
+      width: 375px;
+   }
+   .hero {
+      aspect-ratio: 355/174;
+      height: auto;
+   }
+   .hero-image {
+      width: 100%;
+   }
 }
