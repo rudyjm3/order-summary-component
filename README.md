@@ -4,8 +4,8 @@ A perfect project for newbies who are starting to build confidence with layouts!
 ## Overview
 Frontend Mentor Level Rating:
 
-Difficulty: Newbie
-Languages: HTML & CSS
+- Difficulty: Newbie
+- Languages: HTML & CSS
 
 ### Screenshot
 
