@@ -1,4 +1,4 @@
-### Order Summary Component - Frontend Mentor
+# Order Summary Component - Frontend Mentor
 A perfect project for newbies who are starting to build confidence with layouts!
 
 ## Overview
